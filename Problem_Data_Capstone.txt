@@ -1,0 +1,18 @@
+1.	Description of the problem
+VTOLs (Vertical Take-Off and Landing) vehicules, also know as flying cars, have a great chance to become a reality in the next decade. Several concepts are proposed every years and some are already being tested as for exemple the Volocopter[1] or Lilium[2]. There is a great number companies developping the aircraft but Uber seems to be clearly ahead of the competition concerning the setup of an air taxi service with the elevate project[3]. 
+To provide this service, aircraft are needed as well as bases for the aircraft to land on. Theses bases are called skyports and some will be located directly inside big cities for easy commute between different places in the city. Given the fact that these facilities are expensive to build and will be placed in costly real-estate environment, it is crucial to place them correctly in order to maximise profit and ensure economic viability.
+Air taxi services, will be, as road taxis, a network proper to one city. Living close to this city, I have chosen Paris since I may also discover new insights of my city. But this work can be done for all major cities in the world.
+So the problem I would like to answer is : where should the first dozen of skyports in Paris be located?
+ 
+2.	Methodology
+To answer our question, we first need to identify the potential clients. As the technology will be beginning and investment costs will be huge, ticket prices will certainly be expensive at first. So the location of the first skyports should be convenient to clients able to pay the price of the tickets. I have identified two kind of clients :
+•	Poeple with deep pockets, who spend a lot in leisures.
+•	Professional whose time is expensive and companies are ready to pay for the time gained
+After identifying the clients, we need to identify the venues that these categories of clients are the most susceptible to visit. 
+It may be a little cliché, the first category of venues which comes to my mind is luxury businesses. The idea is to get a list luxury restaurants, hotels and clothes shops. The list of CAC40 (40 biggest companies in France) headquarters will be added. The service would also provide a great added value for these venues which could therefore provide great finacial support and lobbying power to make the first skyports appear.
+The location of all these venues can be found using the Fourquare API. The locations can then be clustered so that a base serves a maximum of venues. 
+Finally, if we make the assumption that current buildings do not offer sufficient safety to land on the roof (weight of the aircraft on building, roof area and slope, private properties), we can find the closest square to the centroid of the cluster to install the skyport.
+
+[1] https://www.volocopter.com/en/
+[2] https://lilium.com/
+[3] https://www.uber.com/us/en/elevate/uberair/
